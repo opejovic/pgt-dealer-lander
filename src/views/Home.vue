@@ -205,61 +205,19 @@
         >
           PGT Products
         </div>
-        <div class="flex justify-between items-center align-middle -mt-16">
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="36"
-              height="56"
-              viewBox="0 0 36 56"
-            >
-              <image
-                id="iconmonstr-arrow-25_copy"
-                data-name="iconmonstr-arrow-25 copy"
-                width="36"
-                height="56"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA4CAYAAACVFFp4AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAJKADAAQAAAABAAAAOAAAAACs1rtFAAACAElEQVRYCc3ZP0vDQBgGcBUddBGHfgtnR8UiuoiiOAiC9LMVhA6iIEXQQdHRWYR+hk4uOgji8xTfkl56yf1575IXnia53F1+XIaj7eJo9LGQsS7wrB5yjHwhpVoqtaRrIKaP7CFDZA0pVS6QYOR5u5DcI+umSDqY7ZrXJkbm3sHJIzKDSg2yYQS1ZaJSguowJmqDDalArpgi6hUXnRQgX4ygJkdtUCjmHZouMtYERWO4RFqgU8zVD5hvujLEsDRAR5hnEDBXCaMBIuYaWeFkHjUXw/ExK6SOiQElwYSCkmFCQEkxvqDkGB9QFowrKBvGBZQVUwfKjqkCNYKxgQ5wQ3U74INcy9w6uhh4i6jtTa4Q6VcEETNEVuWm49G6UTqOn+kmoFZgKCOoNRgB8dia4go9IYfIt6dq839sx3NcZXeCWK1BCag1qCJIUCc4+eGFR6m9PhNEwwNyhjSCmgci6q4plA3UGKoK1AiqDpQd5QLKinIFZUP5gLKgfEHJUSGgpKhQUDJUDCgJKhYkqHOc/PLCo+ZuyBogGm6QSyQapQUi6koDpQlSQWmDYlAcG/Wj52QCy4fv63vDPNvIeNkyoUYzUaw+UvUmiNlHPpHKjrwfW3UrNYPhw6rksRgZb0O9oMN0ZaRzylcmz+DRfH3PaOOX09I/07lARVQPF9a/yf8AuNeg4NJ6McEAAAAASUVORK5CYII="
-              />
-            </svg>
-          </button>
-          <div
-            class="
-              hidden
-              lg:flex
-              justify-center
-              items-center
-              align-middle
-              space-x-3
-              px-4
-            "
-          >
-            <img class="h-80 w-80 bg-blue-300" />
-            <img class="h-80 w-80 bg-blue-300" />
-            <img class="h-80 w-80 bg-blue-300" />
-          </div>
-          <div
-            class="lg:hidden flex justify-center items-center align-middle px-4"
-          >
-            <img class="w-screen h-80 bg-blue-300" />
-          </div>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="36"
-              height="56"
-              viewBox="0 0 36 56"
-            >
-              <image
-                id="iconmonstr-arrow-25"
-                width="36"
-                height="56"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA4CAYAAACVFFp4AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAJKADAAQAAAABAAAAOAAAAACs1rtFAAACFUlEQVRYCc3Yv0oDQRAGcBUttBEL38LaUjCFgoigWAhCnk0EwUIURQRFIrbWIuQZLMRGC0H8vnAT1sv93ZnZy8Dk7jaXnV9mNWEzOxy+zZTEEsavkSfIM2SSmC+pQswtchPZy+5JgprLioWHZVzcIYlh8J5T5DEvvCPfIWIekOu5woLisGunwg6VYcQmKNdOCWgFVYs6Ixg5uqO4ZKvIAXJNqtYcBcXbzJdPOlRjmHhaUObLx4nfkT3k60TZ6gEXFCdlTA1KQBaog9FbUz6EIC3qHBPsKT2jT+H8HLHLt4CJLrSofIcE1xmqDERYJ6gqUCeoOlByVBNQUlRTUDJUG1ASVFuQOyoG5IqKBbmhNCAL1DYnCUML4lyaT/QrvL5nDdKgFvFi7v/GKIsOyRuM7dQ/lCXIpFPWIOlW9NEa1HZLJfBvnOwiB5YgNYY6K5AJxgoUi/kBYB/JXfM4tB3SYA6huB9LshMNSIu5yWN4HQtywcSC3DAxIFdMW5A7pg0oCaYpKBmmCSgppg6UHFMF6gRTBuoMUwSKxfxisiNk4dcBCzWN8KtDg+mj4GXTolX3CUiLMfsBnaCpwbBz0qGqLhY9x78ZLpNZZ6QIQdxPbSBfZLDm6IZhXenQB863kHUoV0wI4vknsgrljsmDQtQzL4JIgmE9WbKg9qhTOxh4ygaTYVivCMTxLyR3ko/IPtL8vwlzFsYfQjGjYq0UyzcAAAAASUVORK5CYII="
-              />
-            </svg>
-          </button>
-        </div>
+
+        <splide class="-mt-28" :options="productSlidesOptionsMdScreen">
+          <splide-slide v-for="product in products" :key="product.id">
+            <img :src="product.src" />
+          </splide-slide>
+        </splide>
+
+        <!-- <splide class="-mt-28 block lg:hidden" :options="productSlidesOptionsSmScreen">
+          <splide-slide v-for="product in products" :key="product.id">
+            <img :src="product.src" />
+          </splide-slide>
+        </splide> -->
+
       </section>
 
       <!-- What our trusted clients say / Testimonials -->
@@ -268,7 +226,7 @@
           What Our Trusted Clients Say
         </h1>
 
-        <div class="lg:hidden block">
+        <!-- <div class="lg:hidden block">
           <div
             class="
               bg-gray-300
@@ -294,9 +252,33 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div
+        <splide class="z-10" :options="testimonialsSlideOptions">
+          <splide-slide class="
+              bg-gray-300
+              h-64
+              w-full
+              flex
+              justify-start
+              items-center
+            " v-for="(testimonial, index) in testimonials" :key="`${index}_${testimonial.customer}_md_up`">
+            <div
+              class="-top-36 left-10 text-pgtGreen"
+              style="position: absolute; font-size: 16rem;"
+            >
+              “
+            </div>
+            <div class="px-10 mx-auto">
+              <p class="mb-4 text-pgtGray">{{ testimonial.text }}</p>
+              <p class="text-pgtGreen font-bold italic">
+                {{ testimonial.client }}
+              </p>
+            </div>
+          </splide-slide>
+        </splide>
+
+        <!-- <div
           class="
             hidden
             lg:flex
@@ -307,7 +289,8 @@
           "
         >
           <div
-            v-for="(testimonial, index) in testimonials" :key="`${index}_${testimonial.customer}_md_up`"
+            v-for="(testimonial, index) in testimonials"
+            :key="`${index}_${testimonial.customer}_md_up`"
             class="
               bg-gray-300
               h-64
@@ -326,10 +309,12 @@
             </div>
             <div class="px-10 mx-auto">
               <p class="mb-4 text-pgtGray">{{ testimonial.text }}</p>
-              <p class="text-pgtGreen font-bold italic">{{ testimonial.client}}</p>
+              <p class="text-pgtGreen font-bold italic">
+                {{ testimonial.client }}
+              </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- Portfolio  -->
@@ -426,7 +411,14 @@
 </template>
 
 <script>
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+
 export default {
+  components: {
+    Splide,
+    SplideSlide,
+  },
+
   name: "Home",
 
   data() {
@@ -445,6 +437,59 @@ export default {
           text: "My sliding glass door is like the door to a bank vault. I knew my family and all my belongings would be safe during the hurricane.",
         },
       ],
+
+      products: [
+        { id: "asda123", src: require("@/assets/images/image2.png") },
+        { id: "asda124", src: require("@/assets/images/image3.png") },
+        { id: "asda125", src: require("@/assets/images/winguard.png") },
+        { id: "asda126", src: require("@/assets/images/image2.png") },
+        { id: "asda127", src: require("@/assets/images/image3.png") },
+        { id: "asda128", src: require("@/assets/images/winguard.png") },
+      ],
+
+      productSlidesOptionsMdScreen: {
+        type: "loop",
+        perMove: 1,
+        perPage: 3,
+        breakpoints: {
+          1024: {
+            perPage: 1,
+            cover: true,
+            heightRatio: 1,
+          },
+        },
+        gap: "2rem",
+        padding: "1rem",
+        pagination: false,
+      },
+
+      productSlidesOptionsSmScreen: {
+        type: "loop",
+        perPage: 1,
+        perMove: 1,
+        heightRatio: 1,
+        cover: true,
+        gap: "2rem",
+        padding: "1rem",
+        pagination: false,
+      },
+
+      testimonialsSlideOptions: {
+        type: "loop",
+        perMove: 1,
+        perPage: 3,
+        breakpoints: {
+          1024: {
+            perPage: 1,
+            cover: true,
+            heightRatio: 0.5,
+          },
+        },
+        gap: "1rem",
+        pagination: true,
+        arrows: false,
+      },
+
       bannerStyle: {
         backgroundImage: `url(${require("@/assets/images/hero-img.png")})`,
         "background-repeat": "no-repeat",
@@ -457,10 +502,277 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 .pgt-dealer-banner {
   background: url("../assets/images/hero-img.png") no-repeat center;
   background-size: cover;
   height: 100%;
+}
+
+@keyframes splide-loading {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.splide--draggable > .splide__track > .splide__list > .splide__slide {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.splide--fade > .splide__track > .splide__list {
+  display: block;
+}
+.splide--fade > .splide__track > .splide__list > .splide__slide {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.splide--fade > .splide__track > .splide__list > .splide__slide.is-active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+.splide--rtl {
+  direction: rtl;
+}
+.splide--ttb > .splide__track > .splide__list {
+  display: block;
+}
+.splide--ttb > .splide__pagination {
+  width: auto;
+}
+.splide__container {
+  box-sizing: border-box;
+  position: relative;
+}
+.splide__list {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: max-content;
+  will-change: transform;
+}
+.splide.is-active .splide__list {
+  display: -ms-flexbox;
+  display: flex;
+}
+.splide__pagination {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  width: 95%;
+}
+.splide__pagination li {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+}
+.splide {
+  visibility: hidden;
+}
+.splide,
+.splide__slide {
+  outline: none;
+  position: relative;
+}
+.splide__slide {
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+}
+.splide__slide img {
+  vertical-align: bottom;
+}
+.splide__slider {
+  position: relative;
+}
+.splide__spinner {
+  animation: splide-loading 1s linear infinite;
+  border: 2px solid #999;
+  border-radius: 50%;
+  bottom: 0;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+.splide__track {
+  overflow-x: clip;
+  position: relative;
+  z-index: 0;
+}
+.splide__arrow {
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.splide__arrow svg {
+  fill: #D9D9D6;
+  height: 2.5em;
+  transition: fill 0.2s linear;
+  width: 2.5em;
+}
+.splide__arrow:hover {
+  cursor: pointer;
+}
+.splide__arrow:hover svg {
+  fill: #D9D9D6;
+}
+.splide__arrow:focus {
+  outline: none;
+}
+.splide__arrow--prev {
+  left: 1em;
+}
+.splide__arrow--prev svg {
+  transform: scaleX(-1);
+}
+.splide__arrow--next {
+  right: 1em;
+}
+.splide__slider > .splide__arrows .splide__arrow--prev {
+  left: -2.5em;
+}
+.splide__slider > .splide__arrows .splide__arrow--next {
+  right: -2.5em;
+}
+.splide__pagination {
+  bottom: 1em;
+  left: 50%;
+  padding: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.splide__pagination__page {
+  background: #ccc;
+  border: none;
+  border-radius: 2.5px;
+  display: inline-block;
+  height: 5px;
+  margin: 3px;
+  padding: 0;
+  transition: all 0.2s linear;
+  width: 20px;
+}
+.splide__pagination__page.is-active {
+  background: #D9D9D6;
+}
+.splide__pagination__page:hover {
+  background: #D9D9D6;
+  cursor: pointer;
+}
+.splide__pagination__page:focus {
+  outline: none;
+}
+.splide__progress__bar {
+  background: #D9D9D6;
+  height: 3px;
+  width: 0;
+}
+.splide {
+  padding: 3em;
+}
+.splide__slide {
+  border-radius: 4px;
+}
+.splide__spinner {
+  border: 2px solid #D9D9D6;
+  border-left-color: transparent;
+}
+.splide--nav > .splide__track > .splide__list > .splide__slide {
+  border: 3px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border-color: #D9D9D6;
+  opacity: 1;
+}
+.splide--nav > .splide__track > .splide__list > .splide__slide:focus {
+  outline: none;
+}
+.splide--rtl > .splide__arrows .splide__arrow--prev,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev {
+  left: auto;
+  right: 1em;
+}
+.splide--rtl > .splide__arrows .splide__arrow--prev svg,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev svg {
+  transform: scaleX(1);
+}
+.splide--rtl > .splide__arrows .splide__arrow--next,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--next {
+  left: 1em;
+  right: auto;
+}
+.splide--rtl > .splide__arrows .splide__arrow--next svg,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--next svg {
+  transform: scaleX(-1);
+}
+.splide--ttb > .splide__arrows .splide__arrow,
+.splide--ttb > .splide__track > .splide__arrows .splide__arrow {
+  left: 50%;
+  transform: translate(-50%);
+}
+.splide--ttb > .splide__arrows .splide__arrow--prev,
+.splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev {
+  top: 1em;
+}
+.splide--ttb > .splide__arrows .splide__arrow--prev svg,
+.splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev svg {
+  transform: rotate(-90deg);
+}
+.splide--ttb > .splide__arrows .splide__arrow--next,
+.splide--ttb > .splide__track > .splide__arrows .splide__arrow--next {
+  bottom: 1em;
+  top: auto;
+}
+.splide--ttb > .splide__arrows .splide__arrow--next svg,
+.splide--ttb > .splide__track > .splide__arrows .splide__arrow--next svg {
+  transform: rotate(90deg);
+}
+.splide--ttb > .splide__pagination {
+  bottom: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: auto;
+  right: 1em;
+  transform: translateY(50%);
+}
+.splide--ttb > .splide__pagination .splide__pagination__page {
+  height: 20px;
+  width: 5px;
 }
 </style>
