@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         pgtGreen: '#254C5A',
-        pgtGray: '#343A40'
+        pgtGray: '#343A40',
+        pgtBlue: '#0F4B74',
       },
       height: {
         pgtSection: '563px',
