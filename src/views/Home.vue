@@ -746,7 +746,8 @@ export default {
   width: 20px;
 }
 .splide__track {
-  overflow-x: clip;
+  /* overflow-x: clip; */
+  overflow: hidden;
   position: relative;
   z-index: 0;
 }
