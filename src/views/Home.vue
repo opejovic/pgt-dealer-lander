@@ -209,7 +209,17 @@
           PGT Products
         </div>
 
-        <splide class="-mt-28" :options="slidesOptions">
+        <splide class="hidden lg:block -mt-28" :options="slidesOptions">
+          <splide-slide
+            class="rounded-none"
+            v-for="product in products"
+            :key="product.id"
+          >
+            <img class="w-full" :src="product.src" />
+          </splide-slide>
+        </splide>
+
+        <splide class="lg:hidden block -mt-28" :options="slidesOptionsSm">
           <splide-slide
             class="rounded-none"
             v-for="product in products"
@@ -558,6 +568,16 @@ export default {
         height: 300,
         gap: "2rem",
         padding: "1rem",
+        pagination: false,
+      },
+
+      slidesOptionsSm: {
+        type: "loop",
+        perMove: 1,
+        perPage: 1,
+        cover: true,
+        heightRatio: 1,
+        height: "100%",
         pagination: false,
       },
 
