@@ -209,17 +209,7 @@
           PGT Products
         </div>
 
-        <splide class="hidden lg:block -mt-28" :options="slidesOptions">
-          <splide-slide
-            class="rounded-none"
-            v-for="product in products"
-            :key="product.id"
-          >
-            <img class="w-full" :src="product.src" />
-          </splide-slide>
-        </splide>
-
-        <splide class="lg:hidden block -mt-28" :options="slidesOptionsSm">
+        <splide class="-mt-28" :options="slidesOptions">
           <splide-slide
             class="rounded-none"
             v-for="product in products"
@@ -236,28 +226,21 @@
           What Our Trusted Clients Say
         </h1>
 
-        <splide :options="testimonialsSlideOptions">
+        <splide class="-mt-20" :options="testimonialsSlideOptions">
           <splide-slide
-            class="
-              bg-gray-200
-              h-64
-              w-full
-              flex
-              justify-start
-              items-center
-              rounded-none
-            "
+            class="bg-gray-200 w-full rounded-none"
             v-for="(testimonial, index) in testimonials"
             :key="`${index}_${testimonial.customer}_md_up`"
           >
+            <div class="h-20 bg-white"></div>
             <div
-              class="-top-36 left-10 text-pgtGreen"
+              class="-top-16 left-10 text-pgtGreen"
               style="position: absolute; font-size: 16rem"
             >
               “
             </div>
-            <div class="px-10 mx-auto">
-              <p class="mb-4 text-pgtGray max-h-28 overflow-y-auto">
+            <div class="px-10 mx-auto pt-16 pb-10">
+              <p class="mb-4 text-pgtGray max-h-24 overflow-y-auto">
                 {{ testimonial.text }}
               </p>
               <p class="text-pgtGray font-bold italic">
@@ -571,16 +554,6 @@ export default {
         pagination: false,
       },
 
-      slidesOptionsSm: {
-        type: "loop",
-        perMove: 1,
-        perPage: 1,
-        cover: true,
-        heightRatio: 1,
-        height: "100%",
-        pagination: false,
-      },
-
       testimonialsSlideOptions: {
         type: "slide",
         perMove: 1,
@@ -746,7 +719,7 @@ export default {
   width: 20px;
 }
 .splide__track {
-  /* overflow-x: clip; */
+  overflow-x: clip;
   overflow: hidden;
   position: relative;
   z-index: 0;
