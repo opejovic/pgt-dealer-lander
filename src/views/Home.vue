@@ -215,7 +215,24 @@
             v-for="product in products"
             :key="product.id"
           >
-            <img class="w-full" :src="product.src" />
+            <img class="w-full relative" :src="product.src" />
+            <div
+              class="
+                absolute
+                bg-pgtGreen
+                w-full
+                bottom-0
+                bg-opacity-50
+                text-white
+                flex
+                justify-start
+                px-2
+                py-2
+                items-center
+              "
+            >
+              Description
+            </div>
           </splide-slide>
         </splide>
       </section>
