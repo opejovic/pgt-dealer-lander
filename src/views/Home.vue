@@ -328,7 +328,83 @@
       </section>
     </main>
 
-    <footer class="w-full bg-gray-200 text-black py-20">
+    <footer class="w-full bg-gray-200 text-black py-16 relative">
+      <button
+        @click="toggleChat"
+        id="chat-button"
+        type="button"
+        class="
+          h-20
+          w-20
+          bg-pgtGreen
+          absolute
+          right-10
+          -top-10
+          flex
+          justify-center
+          items-center
+          rounded-full
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 text-white z-0 pointer-events-none"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <!-- chat -->
+        <section
+          id="chat-popup"
+          v-show="chatOpen"
+          class="
+            shadow-2xl
+            bg-white
+            absolute
+            bottom-28
+            right-0
+            z-50
+            chat-popup
+            transition-all
+            transform
+            duration-500
+            ease-in-out
+          "
+        >
+          <div class="h-full w-full bg-red-300 flex flex-col justify-between">
+            <!-- chat header -->
+            <div class="w-full bg-pgtGreen h-28 relative px-10">
+              <div class="absolute top-12">
+                <div class="flex justify-start space-x-4">
+                  <div class="bg-white h-32 w-32 rounded-full"></div>
+                  <div class="text-white -mt-1">
+                    <h1 class="text-xl font-semibold">Pgt test dealer</h1>
+                    <div class="flex justify-start items-center space-x-2 mt-1">
+                      <span class="h-2 w-2 bg-green-300 rounded-full"></span>
+                      <span class="text-sm font-light">Online</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- chat body -->
+            <div class="">asdasd</div>
+
+            <!-- chat message box -->
+            <div class="w-full h-28 bg-gray-200 flex justify-start items-center px-10">
+              <input class="bg-gray-200 p-4 w-3/5 mr-auto" type="text" placeholder="Send message">
+            </div>
+          </div>
+        </section>
+      </button>
+
       <div
         class="
           max-w-screen-2xl
@@ -488,6 +564,7 @@ export default {
 
   data() {
     return {
+      chatOpen: true,
       testimonials: [
         {
           client: "Lisa P.",
@@ -613,6 +690,14 @@ export default {
         height: "581px",
       },
     };
+  },
+
+  methods: {
+    toggleChat(e) {
+      if (e.target.id !== 'chat-button') return;
+
+      this.chatOpen = !this.chatOpen;
+    },
   },
 };
 </script>
@@ -892,5 +977,10 @@ export default {
 .splide--ttb > .splide__pagination .splide__pagination__page {
   height: 20px;
   width: 5px;
+}
+
+.chat-popup {
+  width: 680px;
+  height: 500px;
 }
 </style>
