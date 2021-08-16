@@ -328,63 +328,65 @@
       </section>
     </main>
 
-    <footer class="w-full bg-gray-200 text-black py-16 relative">
-      <button
-        @click="toggleChat"
-        id="chat-button"
-        type="button"
-        class="
-          h-20
-          w-20
-          bg-pgtGreen
-          absolute
-          right-10
-          -top-10
-          flex
-          justify-center
-          items-center
-          rounded-full
-        "
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-12 w-12 text-white z-0 pointer-events-none"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+    <footer class="w-full bg-gray-200 text-black relative">
+      <section data-name="chat" class="relative w-full h-full">
+        <button
+          @click="toggleChat"
+          id="chat-button"
+          type="button"
+          class="
+            h-20
+            w-20
+            bg-pgtGreen
+            absolute
+            right-10
+            -top-10
+            flex
+            justify-center
+            items-center
+            rounded-full
+          "
         >
-          <path
-            fill-rule="evenodd"
-            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
-            clip-rule="evenodd"
-          />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12 text-white z-0 pointer-events-none"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
 
         <!-- chat -->
-        <section
-          id="chat-popup"
+        <div
           v-show="chatOpen"
           class="
             shadow-2xl
             bg-white
             absolute
-            bottom-28
+            bottom-20
+            md:right-10
             right-0
-            z-50
             chat-popup
-            transition-all
-            transform
-            duration-500
-            ease-in-out
+            z-50
           "
         >
-          <div class="h-full w-full bg-red-300 flex flex-col justify-between">
+          <div class="h-full w-full bg-white flex flex-col justify-between">
             <!-- chat header -->
-            <div class="w-full bg-pgtGreen h-28 relative px-10">
+            <div class="w-full bg-pgtGreen py-20 md:py-14 relative px-10">
               <div class="absolute top-12">
                 <div class="flex justify-start space-x-4">
-                  <div class="bg-white h-32 w-32 rounded-full"></div>
+                  <div class="h-14 w-14 md:h-32 md:w-32 rounded-full px-4 md:px-0 avatar-bg" :style="`background: url(${require('@/assets/images/avatarPlaceholder.png')});`"></div>
                   <div class="text-white -mt-1">
-                    <h1 class="text-xl font-semibold">Pgt test dealer</h1>
+                    <h1 class="text-sm md:text-xl font-semibold" style="overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        max-width: 150px;">Pgt test dealer
+                    </h1>
                     <div class="flex justify-start items-center space-x-2 mt-1">
                       <span class="h-2 w-2 bg-green-300 rounded-full"></span>
                       <span class="text-sm font-light">Online</span>
@@ -395,15 +397,72 @@
             </div>
 
             <!-- chat body -->
-            <div class="">asdasd</div>
+            <div class="ml-10 pr-16 overflow-y-auto mt-20 pb-10">
+              <div class="w-full flex flex-1 justify-start items-start">
+                <div class="px-4 h-10 w-10 rounded-full mr-3 avatar-bg" :style="`background: url(${require('@/assets/images/avatarPlaceholder.png')});`"></div>
+                <div class="w-full">
+                  <p class="mt-1">Pgt Test Dealer</p>
+                  <div class="py-3 px-3 text-sm rounded-lg bg-gray-200 mt-2">
+                    <p>Hi, how can I help you today?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full flex justify-start items-start mt-4">
+                <div class="w-full">
+                  <p class="text-right">User</p>
+                  <div
+                    class="
+                      py-3
+                      px-3
+                      text-sm
+                      rounded-lg
+                      bg-gray-400
+                      text-white
+                      mt-2
+                    "
+                  >
+                    <p>I need assistance please.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- chat message box -->
-            <div class="w-full h-28 bg-gray-200 flex justify-start items-center px-10">
-              <input class="bg-gray-200 p-4 w-3/5 mr-auto" type="text" placeholder="Send message">
+            <div
+              class="
+                w-full
+                h-28
+                bg-gray-200
+                flex
+                justify-between
+                items-start
+                pl-10
+                pr-16
+              "
+              style="min-height: 7rem"
+            >
+              <textarea
+                class="bg-gray-200 w-3/5 text-sm outline-none mt-4"
+                rows="3"
+                placeholder="Send message"
+              ></textarea>
+              <button class="mr-4">
+                <svg
+                  class="text-pgtGreen h-8 mt-4"
+                  viewBox="0 0 513 513"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1769 464.429L496.177 256.429L16.1769 48.4288V208.429L336.177 256.429L16.1769 304.429V464.429Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
-        </section>
-      </button>
+        </div>
+      </section>
 
       <div
         class="
@@ -412,15 +471,16 @@
           lg:px-36
           px-6
           flex flex-col
-          md:flex-row
+          lg:flex-row
           items-center
           justify-between
+          py-16
         "
       >
-        <div>
+        <div class="mb-8 lg:mb-0">
           <!-- Logo -->
           <svg
-            class="text-pgtBlue md:w-48 w-24"
+            class="text-pgtBlue w-48"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 57.5 40"
@@ -686,16 +746,15 @@ export default {
         backgroundImage: `url(${require("@/assets/images/hero-img.png")})`,
         "background-repeat": "no-repeat",
         "background-position": "center",
+        "background-size": "cover",
         "object-fit": "cover",
-        height: "581px",
+        "min-height": "581px",
       },
     };
   },
 
   methods: {
-    toggleChat(e) {
-      if (e.target.id !== 'chat-button') return;
-
+    toggleChat() {
       this.chatOpen = !this.chatOpen;
     },
   },
@@ -981,6 +1040,18 @@ export default {
 
 .chat-popup {
   width: 680px;
-  height: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .chat-popup {
+    width: 100%;
+    right: 0;
+  }
+}
+
+.avatar-bg {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
 }
 </style>
